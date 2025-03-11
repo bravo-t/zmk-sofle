@@ -35,7 +35,7 @@
 				 <5 &adc 7>;	/* A5 = P0.31 = AIN7 */
 */
 
-{
+/ {
 	anin29: analog_input_5 {
 		compatible = "zmk,analog-input";
 		sampling-hz = <100>;
@@ -52,7 +52,7 @@
 		};
 	};
 };
-{
+/ {
 	anin31: analog_input_7 {
 		compatible = "zmk,analog-input";
 		sampling-hz = <100>;
