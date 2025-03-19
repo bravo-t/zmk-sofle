@@ -4,7 +4,7 @@
 * SPDX-License-Identifier: MIT
 *
 */
-
+#include <zephyr/dt-bindings/input/input-event-codes.h>
 #include "eyelash_sofle.dtsi"
 
 &kscan0 {
@@ -18,7 +18,56 @@
          ;
 };
 
-&left_encoder {
+
+&adc {
     status = "okay";
 };
 
+/*
+		io-channel-map = <0 &adc 1>,	 // A0 = P0.3 = AIN1 
+				 <1 &adc 2>,	 // A1 = P0.4 = AIN2 
+				 <2 &adc 4>,	 // A2 = P0.28 = AIN4 
+				 <3 &adc 5>,	 // A3 = P0.29 = AIN5 
+				 <4 &adc 6>,	 // A4 = P0.30 = AIN6 
+				 <5 &adc 7>;	 // A5 = P0.31 = AIN7 
+*/
+
+/ {
+	anin29: analog_input_5 {
+		compatible = "zmk,analog-input";
+		sampling-hz = <100>;
+		x-ch {
+			io-channels = <&adc 5>;
+			mv-mid = <1630>;
+			mv-min-max = <1600>;
+			mv-deadzone = <10>;
+			scale-multiplier = <1>;
+			scale-divisor = <70>;
+			invert;
+			evt-type = <INPUT_EV_REL>;
+			input-code = <INPUT_REL_X>;
+		};
+	};
+};
+/ {
+	anin31: analog_input_7 {
+		compatible = "zmk,analog-input";
+		sampling-hz = <100>;
+		y-ch {
+			io-channels = <&adc 7>;
+			mv-mid = <1630>;
+			mv-min-max = <1600>;
+			mv-deadzone = <10>;
+			scale-multiplier = <3>;
+			scale-divisor = <4>;
+			invert;
+			evt-type = <INPUT_EV_REL>;
+			input-code = <INPUT_REL_Y>;
+
+			/* enable report mdoe for gamepad axix or knob */
+			/* to only call input_report on quantquantized value is updated */
+			/* report-on-change-only; */
+
+		};
+	};
+};
