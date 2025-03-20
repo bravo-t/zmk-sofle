@@ -36,7 +36,7 @@ zephyr_udc0: &usbd {
 */
 
 / {
-	anin29: analog_input_5 {
+	anin0: analog_input_0 {
 		compatible = "zmk,analog-input";
 		sampling-hz = <100>;
 		x-ch {
@@ -50,12 +50,6 @@ zephyr_udc0: &usbd {
 			evt-type = <INPUT_EV_REL>;
 			input-code = <INPUT_REL_X>;
 		};
-	};
-};
-/ {
-	anin31: analog_input_7 {
-		compatible = "zmk,analog-input";
-		sampling-hz = <100>;
 		y-ch {
 			io-channels = <&adc 7>;
 			mv-mid = <1630>;
