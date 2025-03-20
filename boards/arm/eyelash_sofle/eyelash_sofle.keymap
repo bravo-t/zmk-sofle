@@ -7,6 +7,8 @@
 
 #include <input/processors.dtsi>
 
+&out OUT_USB
+
    &mmv_input_listener {
        input-processors = <&zip_xy_scaler 2 1>;
    };
