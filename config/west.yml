@@ -8,8 +8,8 @@ manifest:
       # - https://docs.zephyrproject.org/3.5.0/develop/west/manifest.html#projects
     - name: gpeye
       url-base: https://github.com/GPeye
-    - name: bravo-t
-      url-base: https://github.com/bravo-t
+    - name: badjeff
+      url-base: https://github.com/badjeff
   projects:
     - name: eyelash_sofle
       url: https://github.com/bravo-t/zmk-sofle
@@ -22,7 +22,7 @@ manifest:
       revision: main
       import: app/west.yml
     - name: zmk-analog-input-driver
-      remote: bravo-t
+      remote: badjeff
       revision: main
   self:
     path: config
