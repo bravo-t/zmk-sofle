@@ -5,7 +5,7 @@
 *
 */
 
-#include "eyelash_sofle.dtsi"
+#include "sofleu.dtsi"
 
 &kscan0 {
      col-gpios

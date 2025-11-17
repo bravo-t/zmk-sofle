@@ -5,7 +5,7 @@
 *
 */
 #include <zephyr/dt-bindings/input/input-event-codes.h>
-#include "eyelash_sofle.dtsi"
+#include "sofleu.dtsi"
 
 &kscan0 {
      col-gpios

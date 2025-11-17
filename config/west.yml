@@ -11,7 +11,7 @@ manifest:
     - name: badjeff
       url-base: https://github.com/badjeff
   projects:
-    - name: eyelash_sofle
+    - name: sofleu
       url: https://github.com/bravo-t/zmk-sofle
       revision: main
     - name: mario-peripheral-animation
