@@ -1,4 +1,4 @@
-layout: {zmk_keyboard: sofleu}
+layout: {zmk_keyboard: SofleU}
 layers:
   LAYER0:
   - $$mdi:keyboard-esc$$
