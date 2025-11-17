@@ -1,13 +1,13 @@
 ---
 include:
-  - board: sofleu_left
+  - board: SofleU_left
     shield: nice_view
-  - board: sofleu_right
+  - board: SofleU_right
     shield: nice_view_custom
-  - board: sofleu_left
+  - board: SofleU_left
     shield: nice_view
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n
-    artifact-name: sofleu_studio_left
-  - board: sofleu_left
+    artifact-name: SofleU_studio_left
+  - board: SofleU_left
     shield: settings_reset

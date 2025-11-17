@@ -1,5 +1,5 @@
 file_format: "1"
-id: sofleu
+id: SofleU
 name: SofleU
 url: https://github.com/bravo-t/zmk-sofle
 type: board
@@ -11,5 +11,5 @@ outputs:
   - usb
   - ble
 siblings:
-  - sofleu_left
-  - sofleu_right
+  - SofleU_left
+  - SofleU_right

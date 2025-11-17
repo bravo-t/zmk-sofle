@@ -1,7 +1,7 @@
 #include <physical_layouts.dtsi>
 
 / {
-    sofleu_layout: sofleu_layout {
+    SofleU_layout: SofleU_layout {
         compatible = "zmk,physical-layout";
         display-name = "Layout";
         transform = <&default_transform>;

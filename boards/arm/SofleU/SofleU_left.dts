@@ -5,7 +5,7 @@
 *
 */
 
-#include "sofleu.dtsi"
+#include "SofleU.dtsi"
 
 &kscan0 {
      col-gpios
